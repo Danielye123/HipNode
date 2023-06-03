@@ -3,7 +3,7 @@ import Avatar from './Avatar.png';
 import Avatar2 from './Avatar2.png';
 import Avatar3 from './Avatar3.png';
 import Avatar4 from './Avatar4.svg';
-import Message from './message.png';
+import Message from './Message.png';
 import Ellipse from './Ellipse.png';
 import twitter from './twitter.svg';
 import Facebook from './Facebook.svg';
