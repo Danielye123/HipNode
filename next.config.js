@@ -10,7 +10,7 @@ const nextConfig = {
       {
         source: '/api/post',
         // destination: 'http://localhost:3000/api/post',
-        destination: 'https://hipnode-ten.vercel.app/api/post',
+        destination: 'https://hip-node-jet.vercel.app/api/post',
       },
     ];
   },

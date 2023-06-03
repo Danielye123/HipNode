@@ -16,7 +16,7 @@ interface Props {
 
 async function fetchPostContents(id: string) {
   // const res = await fetch(`http://localhost:3000/api/post/${id}`);
-  const res = await fetch(`https://hipnode-ten.vercel.app/api/post/${id}`);
+  const res = await fetch(`https://hip-node-jet.vercel.app/api/post/${id}`);
   const post = await res.json();
   return post;
 }
