@@ -11,7 +11,7 @@ import Users from '../../../../lib/mongoConnection/models/User';
 import connectMongo from '../../../../lib/mongoConnection';
 
 // Initialize NextAuth
-
+//test
 export default NextAuth({
   secret: process.env.NEXTAUTH_SECRET,
   providers: [
