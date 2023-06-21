@@ -20,7 +20,7 @@ interface SigninProps {
 
 function Signin({ csrfToken, providers }: SigninProps) {
   const handleSignIn = (provider: { id: any }) => {
-    console.log('Signing in with provider:', provider.id);
+    // console.log('Signing in with provider:', provider.id);
     signIn(provider.id, { checks: { state: csrfToken } });
   };
 

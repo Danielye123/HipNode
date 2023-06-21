@@ -18,16 +18,16 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-  console.log('connecting to mongo');
+  // console.log('connecting to mongo');
   await connectMongo();
-  console.log('connected to mongo');
+  // console.log('connected to mongo');
 
   const session: SessionType | null = await getServerSession(
     req,
     res,
     authOptions
   );
-  console.log(session);
+  // console.log(session);
   if (req.method === 'GET') {
     try {
       if (!session) {
@@ -46,10 +46,10 @@ export default async function handler(
         .populate('fromUser', '_id name email profile_photo')
         .sort({ created_at: -1 });
 
-      console.log(notifications);
+      // console.log(notifications);
 
       res.status(200).json(notifications);
-      console.log(notifications);
+      // console.log(notifications);
     } catch (error) {
       res.status(500).json({ error: `Cannot delete posts Error: ${error}` });
     }

@@ -81,7 +81,6 @@ export default async function handler(
             email: session.user?.email,
           });
           const { parent_group } = req.body;
-          // console.log({ title, content, post_image, post_tags, author, parent_group });
           const currentGroup = await Group.findOne({ _id: parent_group });
           console.log(req.body);
           const newPost = new Post({

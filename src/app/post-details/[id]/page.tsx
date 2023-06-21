@@ -37,7 +37,7 @@ function PostDetailsPage({ params: { id } }: Props) {
     return <Loading />;
   }
 
-  console.log(post);
+  // console.log(post);
 
   return (
     <div className="flex flex-col md:flex-row items-start justify-center w-full grow bg-layoutBackground dark:bg-dark2 px-5 md:px-10 py-5 gap-5 pb-20">

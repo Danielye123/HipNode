@@ -17,7 +17,7 @@ export default async function handler(
 ): Promise<void> {
   await connectMongo();
   const { userId } = req.query;
-  console.log(userId);
+  // console.log(userId);
 
   if (req.method === 'GET') {
     try {

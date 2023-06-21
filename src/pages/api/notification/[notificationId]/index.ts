@@ -18,9 +18,9 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-  console.log('connecting to mongo');
+  // console.log('connecting to mongo');
   await connectMongo();
-  console.log('connected to mongo');
+  // console.log('connected to mongo');
 
   const session: SessionType | null = await getServerSession(
     req,

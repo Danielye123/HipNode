@@ -31,7 +31,7 @@ export default async function handler(
   await connectMongo();
   const { method } = req;
   const { postId } = req.query;
-  console.log(postId);
+  // console.log(postId);
 
   switch (method) {
     case 'POST':

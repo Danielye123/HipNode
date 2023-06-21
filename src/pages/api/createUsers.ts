@@ -21,7 +21,7 @@ export default async function handler(
   try {
     if (req.method === 'POST') {
       const newUser = await User.create({ ...req.body });
-      console.log(newUser);
+      // console.log(newUser);
       res.status(200).json({ message: `${newUser} created` });
     }
   } catch (error) {

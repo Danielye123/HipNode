@@ -30,5 +30,5 @@ export default async function handler(req: any, res: any) {
   ]).toArray();
 
   res.json(data);
-  console.log(data);
+  // console.log(data);
 }

@@ -37,7 +37,7 @@ export default async function handler(
         });
         currentUser?.groups_owned.push(newGroup);
         currentUser?.save();
-        console.log(newGroup);
+        // console.log(newGroup);
         res.status(200).json({ message: `${newGroup} created` });
       }
     } catch (error) {

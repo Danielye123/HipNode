@@ -52,7 +52,7 @@ function ProfileLeftSidebar({ userData, externalProfile }: Props) {
 
     // Update the profile userData
     const result = await axios.get('/api/user/' + userData._id);
-    console.log(result);
+    // console.log(result);
     setProfileData(result.data);
   };
 
